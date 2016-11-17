@@ -17,9 +17,9 @@ module.exports = {
     //出口文件
     output: {
       //定义打包输出文件的路径，注意：可以有多个entry的值，但是只有一个指定的output配置
+      filename: "js/bundle.[hash].js",
       path: outputPath,
-      filename: "js/bundle.js"
-      // publicPath:
+      // publicPath: "./dist/"
     },
     module: {
       loaders:[
