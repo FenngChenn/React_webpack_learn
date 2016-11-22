@@ -1,0 +1,54 @@
+
+.head-animate:hover{
+  -webkit-animation-name: move;
+  animation-name: move;
+  -webkit-animation-duration: .12s;
+  animation-duration: .12s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  animation-iteration-count: 4;
+}
+@keyframes move{
+  0%{
+    -webkit-transform:translateX(-2px);
+    transform: translateX(-2px);
+  }
+  100%{
+    -webkit-transform:translateX(2px);
+    transform:translate(2px);
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .nav-header {
+
+  }
+  .nav-blog {
+    background-color: cornflowerblue;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    align-items: center;
+    -webkit-align-items: center;
+  }
+  .navigation li {
+    list-style-type: none;
+    margin: 15px;
+  }
+  .navigation li a:hover {
+    color: #C2C2C2;
+  }
+  .navigation li a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 720px) {
+  .nav-header {
+    margin-top: 1.2em;
+  }
+}
