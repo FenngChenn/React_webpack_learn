@@ -28,13 +28,20 @@ module.exports = {
           include: [
             path.resolve(__dirname, "..", "src")
           ],
-          loaders: [
-            'babel'
-          ]
+          loaders: "babel"
         },
         {
           test: /\.css$/,
-          loader: ExtractTextPlugin.extract("style-loader","css-loader")
+          // loader: ExtractTextPlugin.extract("style-loader","css-loader")
+          loader: ExtractTextPlugin.extract("style!css")
+        },
+        {
+          test: /\.scss$/,
+          loader: ExtractTextPlugin.extract("style!css!sass")
+        },
+        {
+          test: /\.(jpg|png)$/,
+          loader: "url?limit=10000&name=images/[name]-[hash].[ext]"
         }
       ]
     },
