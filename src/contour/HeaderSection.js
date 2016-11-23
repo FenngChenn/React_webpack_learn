@@ -23,3 +23,7 @@ class HeadImage extends Component {
     );
   }
 }
+
+module.exports = {
+  HeaderSection
+}
