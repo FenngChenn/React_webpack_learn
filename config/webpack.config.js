@@ -28,7 +28,8 @@ module.exports = {
           include: [
             path.resolve(__dirname, "..", "src")
           ],
-          loaders: "babel"
+          loaders: ["babel"],
+          exclude: '/node_modules/'
         },
         {
           test: /\.css$/,
