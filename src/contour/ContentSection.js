@@ -5,7 +5,7 @@ import { BlogSection } from './../content/BlogSection.js';
 class ContentSection extends Component {
   render() {
     return (
-      <section>
+      <section className="content-wrapper">
         <IntroduceSelf />
         <BlogSection />
       </section>
