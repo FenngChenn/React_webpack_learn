@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class HeaderSection extends Component {
   render() {
     return(
-      <header class="nav-header">
+      <header className="nav-header">
         <HeadImage />
-        <ul class="nav-blog">
+        <ul className="nav-blog">
           <li><a href="#">Docs</a></li>
           <li><a href="#">Support</a></li>
           <li><a href="#">Download</a></li>
@@ -19,7 +19,11 @@ class HeaderSection extends Component {
 class HeadImage extends Component {
   render() {
     return(
-      <img src="img/head.jpg" class="head-animate">
+      <img src="img/head.jpg" className="head-animate">
     );
   }
+}
+
+module.exports = {
+  HeaderSection
 }
