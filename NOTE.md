@@ -10,3 +10,4 @@
 * json-loader 用来将json字符串转化成对象
 * imports-loader 允许我们使用需要依赖指定全局变量的模块,这个加载器对于依赖全局变量比如$或者可以指向window对象的this的第三方模块很有用处
 * webpack-dev-middleware 只可用于演示，不能用于真正的产品中，对于webpack来说是一个简单的中间件包装器，服务于从webpack将文件发送到一个连接的服务器中
+* 在使用webpack命令进行打包时，需要在webpack配置文件目录下进行webpack命令
