@@ -12,3 +12,5 @@ class IndexContainer extends Component {
     );
   }
 }
+
+module.exports = IndexContainer;
