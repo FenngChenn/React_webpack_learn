@@ -13,10 +13,6 @@
   },
   "author": "springer",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/FenngChenn/react_webpack_learn/issues"
-  },
-  "homepage": "https://github.com/FenngChenn/react_webpack_learn#readme",
   "devDependencies": {
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.7",
