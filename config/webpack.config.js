@@ -54,5 +54,15 @@ module.exports = {
         path.resolve(__dirname, '')
       ],
       extensions: ['','.js']
-    }
+    },
+    devServer: {
+      //默认webpack-dev-server会为根文件夹提供本地服务器，如果想为另外一个目录下的文件提供本地服务器，应该在这里设置其所在目录
+      contentBase: path.resolve(__dirname, '..'),
+      // hot: true,
+      port: 8086, //默认端口为8080
+      inline: true  //设置为true时, 当源文件改变会自动刷新页面
+    },
+    plugins: [
+      new webpack.HotModuleReplacementPlugin()
+    ]
 };
