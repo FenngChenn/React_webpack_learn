@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var contextPath = path.resolve(__dirname, '..', 'src');
-var outputPath = path.resolve(__dirname, '..', 'dist');
+const outputPath = path.resolve(__dirname, '..', 'dist');
 var entryPath = path.resolve(__dirname, '..', 'src', 'entry.js');
 
 module.exports = {
@@ -49,6 +49,10 @@ module.exports = {
       ]
     },
     resolve: {
+      modules:[
+        'node_modules',
+        path.resolve(__dirname, '')
+      ],
       extensions: ['','.js']
     }
 };
