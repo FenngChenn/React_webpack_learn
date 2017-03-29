@@ -19,11 +19,9 @@ class HeaderSection extends Component {
 class HeadImage extends Component {
   render() {
     return(
-      <img src="img/head.jpg" className="head-animate">
+      <img src="img/head.jpg" className="head-animate" />
     );
   }
 }
 
-module.exports = {
-  HeaderSection
-}
+module.exports = HeaderSection;
