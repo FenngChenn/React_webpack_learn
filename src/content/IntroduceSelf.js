@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 
 class IntroduceSelf extends Component {
-  // constructor(props)
-  getInitialState: function(){
-    return{userInput: ''};
-  },
+  constructor(props){
+    super(props);
+    this.state = {userInput: ''};
+  }
   handleChange: function(e){
     this.setState({userInput: e.target.value});
-  },
+  }
   render() {
     return(
       <div className="introduce">
