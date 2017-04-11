@@ -5,7 +5,7 @@ class IntroduceSelf extends Component {
     super(props);
     this.state = {userInput: ''};
   }
-  handleChange: function(e){
+  handleChange(e){
     this.setState({userInput: e.target.value});
   }
   render() {

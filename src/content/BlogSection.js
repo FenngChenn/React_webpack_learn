@@ -4,6 +4,7 @@ class BlogSection extends Component {
   render() {
     return(
       <div>
+      <div>
         <h2>React</h2>
         <div>
           React是React类库的入口。如果你正在使用预编译包的其中一个，那么React可能是一个全局变量；如果你使用的是CommonJS模块，
@@ -68,6 +69,7 @@ class BlogSection extends Component {
         <h4>React.Children.only</h4>
         <span>object React.Children.only(Object children)</span>
         <div>返回children中仅有的子结构，否则抛出异常</div>
+      </div>
       </div>
     );
   }
